@@ -2,89 +2,94 @@
 	margin: 0;
 	padding:0;
 	box-sizing: border-box;
-font-family: -apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+  font-family: -apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
 
 }
 a{
 	text-decoration: none;
 }
+
 header{
 	border-bottom: 1px solid #eee;
 	height: 56px;
-	line-height: 56px;
-	box-sizing: border-box;
 }
-.container{
-	height: 56px;
-	line-height: 56px;
-	padding: 0 40px;
+.header-container{
+	max-width: 1440px;
+	margin: 0 auto;
 }
-.logo{
-	line-height: 56px;
-	vertical-align: top;
-}
-.img-logo{
+header .jianshu-logo{
 	width: 100px;
 	height: 56px;
 }
-.header-middle{
-	margin-left:150px;
+header .header-middle{
+	margin-left:140px;
 	display: inline-block;
-	line-height: 56px;
 	vertical-align: top;
 }
-.home-page{
-	display: inline-block;
+header .header-middle >a{
+	padding:15px;
+	height: 56px;
 	line-height: 56px;
-	cursor: pointer;
+	font-size: 17px;
+}
+
+header .header-middle .home-page{
 	color: #ea6f5a;
-	padding-right: 25px;
 }
-.download{
-	text-align: center;
-	display: inline-block;
+header .header-middle .download{
 	color: #333;
+	transition: all .2s ease;
 }
-.download:hover{
-	width: 100px;
+header .header-middle .download:hover{
+	/*width: 100px;
 	height: 56px;
-	border:none;
-	background-color:#eee;
+	border:none;*/
+	background-color:#f5f5f5;
 }
-.header-search{
-	width: 160px;
-	height: 38px;
-	margin: 10px 20px;
-	line-height: 56px;
-	border:1px solid #eee;
-	border-radius: 40px;
-	background:#eee;
-	position: relative;
-	vertical-align: top;
+header .header-search{
+	position:relative;
 	display: inline-block;
-}
-.input-search{
-	width: 100px;
-	height: 38px;
-	margin:0 20px;
-	border-style: none;
-	background-color: #eee;
-	position: absolute;	
-}
-.header-right{
-	display: inline-block;
-	line-height: 56px;
+	height: 56px;
+	padding-top: 8px;
 	vertical-align: top;
-	float: right;
+	margin-left: 25px;
+}
+header .header-search .icno{
+	position: absolute;
+	right: 10px;
+	width: 17px;
+	height: 17px;
+	top: 50%;
+	background: #333;
+	border-radius: 50%;
+	transform: translateY(-50%);
 
 }
-.login{
-	margin: 11px 6px 0 10px;
+header .input-search{
+	display:inline-block;
+	width: 160px;
+	height: 40px;
+	border:1px solid #eee;
+	border-radius: 40px;
+	outline: none;
+	padding-left: 20px;
+	padding-right: 40px;
+	background:#eee;
+}
+
+header .header-right{
+	float: right;
+	height: 56px;
+}
+header .header-right .login{
+	line-height: 56px;
 	font-size: 15px;
 	color: #969696;
+	margin-right: 24px;
 }
-.sign{
-	float: right;
+header .header-right .sign{
+	display: inline-block;
+	vertical-align: top;
 	width: 60px;
 	height: 38px;
 	line-height: 38px;
@@ -95,22 +100,23 @@ header{
 	text-align: center;
 	color: #ec6149;
 }
-.sign:hover{
+header .header-right .sign:hover{
 	background-color:rgba(236,97,73,0.05); 
 }
-.write{
-	float: right;
+header .header-right .write{
+	display: inline-block;
+	vertical-align: top;
 	width: 100px;
 	height: 40px;
 	text-align: center;
-	line-height: 38px;
+	line-height: 40px;
 	margin: 8px 15px 0;
 	border-radius: 20px;
 	font-size: 15px;
 	color: #fff;
 	background-color: #ea6f5a;
 }
-.write:hover{
-	background-color: red;
+header .header-right .write:hover{
+	background-color: #ec6149;
 
 }
