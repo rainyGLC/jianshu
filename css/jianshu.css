@@ -260,22 +260,16 @@ color: #333;
 }
 .scrap-section .scrap-list{
 	position: relative;
-	border-top:1px soild #f0f0f0;
+	border-top:1px solid #f0f0f0;
 	margin-top: 20px;
-	padding: 20px 0;
-}
-.scrap-list .scrap-line {
-	margin: -5px 0 15px;
-	border-top: 1px solid #f0f0f0;
 }
 .scrap-section .scrap-list .cover{
 	position: absolute;
 	top: 50%;
 	right: 0px;
-	margin-top: -58px;
-	width: 140px;
-	height: 117px;
-	border: 1px solid #f0f0f0;
+	margin-top: -44px;
+	width: 125px;
+	height: 100px;
 	border-radius: 4px;
 	background: #fff;
 }
@@ -291,8 +285,8 @@ color: #333;
 	font-size: 20px;
 }
 .scrap-section .scrap-list .cover img{
-	width: 140px;
-	height: 117px;
+	width: 125px;
+	height: 100px;
 }
 .scrap-section .scrap-list .scrap-foot{
 	margin-top: 10px;
