@@ -121,17 +121,12 @@ header .header-right .write:hover{
 	background-color: #ec6149;
 
 }
-
-
-/*.big-container{
-	
-}*/
 .main-container{
 	width: 960px;
 	margin: 0 auto;
 	padding-top:30px;
 }
-.left-container{
+.artical-section{
   display: inline-block;
 	width: 640px;
 	padding-right: 0px;
@@ -173,20 +168,21 @@ margin-top: 7px;
 color: #333;
 }
 */
-.left-container .left-banner{
+.artical-section .banner-list{
 	width: 625px;
 	height: 270px;
 }
-.left-container .left-banner img{
+.artical-section .banner-list img{
 	width: 625px;
 	height: 270px;
 	border-radius: 20px;
 }
-.left-container .label-group{
+.artical-section .classification-list{
+	display:inline-block;
 	margin-top: 20px;
 }
-.label-group .label{
-	display: inline-block;
+.classification-list .classification-item{
+	/*display: block;
 	border:1px solid #dcdcdc;
 	border-radius: 4px;
 	color: #333;
@@ -194,24 +190,32 @@ color: #333;
 	overflow: hidden;
 	padding-right: 10px;
 	margin: 10px 20px 10px 0;
-	vertical-align: middle;
+	vertical-align: middle;*/
+	display: inline-block;
+  margin: 0 18px 18px 0;
+  min-height: 32px;
+  background-color: #f7f7f7;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  vertical-align: middle;
 }
-.label-group .label img{
+.classification-list .classification-item img{
 	width: 32px;
 	height: 32px;
-	vertical-align: middle;
+	border: 0;
+	overflow: hidden;
 	margin-right: 10px;
 }
-.label-group .label-more{
+.classification-list .classification-item-more{
 	vertical-align: middle;
 }
-.left-content .left-item{
+.scrap-content .scrap-list{
 	position: relative;
 	border-top:1px soild #ccc;
 	margin-top: 20px;
 	padding: 20px 0;
 }
-.left-content .left-item .cover{
+.scrap-content .scrap-list .cover{
 	position: absolute;
 	top: 50%;
 	right: 0px;
@@ -222,50 +226,102 @@ color: #333;
 	border-radius: 4px;
 	background: red;
 }
-.left-detail{
+.scrap-detail{
 	margin-right: 160px;
 }
-.left-detail .left-title{
+.scrap-detail .scrap-title{
 	display: block;
 	margin-top: 20px;
 	color: #333;
 }
-.left-detail .left-title h2{
+.scrap-detail .scrap-title h2{
 	font-size: 20px;
 }
-.left-content .left-item .cover img{
+.scrap-content .scrap-list .cover img{
 	width: 140px;
 	height: 117px;
 }
-.left-content .left-item .left-foot{
+.scrap-content .scrap-list .scrap-foot{
 	margin-top: 10px;
 	font-size: 12px;
 }
-.left-foot .left-username{
+.scrap-foot .scrap-username{
 	color: #999;
 }
-.left-foot .left-username:hover{
+.scrap-foot .scrap-username:hover{
   color: #333;
 }
-.left-foot span{
+.scrap-foot span{
 	color: #999;
 }
-.left-foot .iconfont{
+.scrap-foot .iconfont{
 	margin-left: 10px;
 }
+.scrap-content .scrap-more{
+	height: 40px;
+	padding:10px 15px;
+	margin:30px auto 60px;
+	font-size: 15px;
+	text-align: center;
+	background-color: #a5a5a5;
+	border-radius: 20px;
 
+}
+.scrap-content .scrap-more .more-reading{
+	color: #fff;
 
-.right-container{
-	display: inline-block;
+}
+.scrap-content .scrap-more .more-reading:hover{
+	background-color: #9b9b9b;
+}
+.artical-section .scrap-foot{
+	height: 89px;
+}
+.scrap-foot .foot-one a{
+ 	color:#969696;
+ 	font-size: 13px;
+ }
+ .foot-one a:hover{
+ 	color: #2f2f2f;
+ }
+ .scrap-foot .foot-two{
+ 	margin-top: 10px;
+ 	font-size: 12px;
+ 	color: #c8c8c8;
+ }
+ .foot-two .number:hover{
+ 	color:#2f2f2f; 
+ }
+.scrap-foot .foot-two .name-validation{
+	width: 60px;
+	height: 30px;
+  right:-41px;
+	top:-11px;
+}
+.foot-two a{
+	color: #c8c8c8;
+}
+.foot-two .mail{
+	width: 60px;
+	height: 30px;
+}
+.foot-two .business-licence{
+	width: 26px;
+	height: 30px;
+}
+
+.aside-section{
+	display: inline-block;	
+	vertical-align: top;
 	width: 219px;
 	height: 900px;
-	vertical-align: top;
+
 	margin-left:35px;
 }
-.right-container .panels{
+.aside-section .panels-section{
 	width: 219px;
 }
-.right-container .panels img{
+.aside-section .panels-section img{
 	width: 219px;
 	height: 39px;
 	margin-bottom:6px;
@@ -299,55 +355,55 @@ color: #333;
 	font-size: 10px;
 	color: #999;
 }
-.ringh-recommand{
+.recommand-section{
 	margin-top: 30px;
 	width: 218px;
 }
-.ringh-recommand h3{
+.recommand-section h3{
 	color: #999;
 	font-size: 14px;
 }
-.ringh-recommand h3 .change{
+.recommand-section h3 .change{
 	font-size: 14px;
 	color: #999;
 	margin-left:115px;
 }
-.ringh-recommand ul li{
+.recommand-section ul li{
 	list-style:none;
 }
-.right-item{
+.recommand-item{
 	margin-top: 15px;
 }
-.ringh-recommand .right-item .avatar{
+.recommand-section .recommand-item .avatar{
 	float: left;
 	width: 50px;
 	height: 50px;
 }
-.ringh-recommand .right-item .avatar img{
+.recommand-section .recommand-item .avatar img{
 	width: 50px;
 	height: 50px;
 	border:1px solid #ececec;
 	border-radius: 50%;
 }
-.ringh-recommand .right-item h4{
-	margin-left: 60px;
-	margin-top: 30px;
-}
-.ringh-recommand .right-item .username{
+.recommand-section .recommand-item .username{
+	display: block;
 	color: #333;
-	font-size: 14px;
+	font-size: 12px;
+	padding-top: 5px;
+	margin-left: 60px;
 }
-.ringh-recommand .right-item .notice{
+.recommand-item .writing{
+	font-size: 10px;
+	color: #969696;
+	margin-top: 2px;
+	margin-left: 60px;
+}
+.recommand-section .recommand-item .notice{
 	float: right;
 	color: #42c02e;
+  margin-top: -39px;
 }
-.ringh-recommand .right-item  p{
-	margin-left: 60px;
-	color: #999;
-	font-size: 10px;
-	margin-top: 10px;
-}
-.ringh-recommand .more{
+.recommand-section .more{
 	display: block;
 	width: 218px;
 	height: 30px;
